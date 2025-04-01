@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+header {
+    background: 
+    linear-gradient(to right, rgba(77, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('../assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../assets/bg-body.jpg');
+    font-family:"Room-Medium"
+}
+
+.borda-texto{
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #414040;
+    }
+
+.selecionado:focus{
+    border: 2px solid white;
+}
