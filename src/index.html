@@ -14,40 +14,14 @@
         <p class="text-center text-slate-200 text-xl">ALTO DESEMPENHO POR PREÇOS INCRÍVEIS</p>
     </header>
     <main id="carros" class="w-[95vw] bg-red-950 h-full pb-10 mx-auto mt-[-4dvh] max-w-[900px] border-2 border-red-900">
-        <div class="justify-between p-5 hidden">
+        <div id="filtro-container" class="justify-between p-5 flex">
             <h1 class="text-white text-2xl">NOVIDADES</h1>
             <button id="filtro-btn" class="w-50 h-8 bg-red-700 flex justify-between rounded-s text-sm">
                 <p class="m-auto font-light text-slate-200">Organizar por preço</p> <img id="filtro-img" class="m-auto w-4 h-2" src="../assets/traco.png"></img>
             </button>
         </div>
-        <div id="lista-carros" class="grid-cols-2 md:grid-cols-3 hidden">
+        <div id="lista-carros" class="grid-cols-2 md:grid-cols-3 grid">
         </div>
-        
-        <div id="show-prod" class="grid grid-cols-3 p-7 gap-4">
-            <div class=" text-slate-200 ">
-                <h2 class="md:text-2xl mb-4">Karin Kuruma Blindado</h2>
-                <p class="hidden md:block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique error non, sunt accusantium molestias vitae id vel. Magni sapiente, consequatur debitis ullam assumenda quia sunt totam sed repellat, recusandae corrupti?</p>
-                <h2 class="md:text-2xl text-sm pt-10">SELECIONE UMA DAS CORES DISPONÍVEIS PARA ENCOMENDAR</h2>
-                <div id="color-selector" class="grid grid-cols-3 w-fit gap-5 md:ml-2 p-5">
-                    <button class="bg-blue-500 rounded-full size-6 md:size-10 selecionado"></button>
-                    <button class="bg-red-500 rounded-full size-6 md:size-10 selecionado"></button>
-                    <button class="bg-green-500 rounded-full size-6 md:size-10 selecionado"></button>
-                    <button class="bg-yellow-500 rounded-full size-6 md:size-10 selecionado"></button>
-                    <button class="bg-black rounded-full size-6 md:size-10 selecionado"></button>
-                    <button class="bg-white rounded-full size-6 md:size-10 selecionado"></button>
-                </div>
-            </div>
-            <div class="col-span-2">
-                <p class="flex justify-end text-slate-200 text-2xl">2,000,000</p>
-                <div class="grid grid-cols-2 w-full pt-10 gap-1">
-                    <img class="col-span-2" src="../assets/carros/kuruma.jpg">
-                    <img class="col-span-1" src="../assets/carros/kuruma-2.jpg">
-                    <img class="col-span-1" src="../assets/carros/kuruma-3.jpg">
-                </div>
-                
-            </div>
-        </div>
-        <p class="block md:hidden px-10 text-slate-200 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique error non, sunt accusantium molestias vitae id vel. Magni sapiente, consequatur debitis ullam assumenda quia sunt totam sed repellat, recusandae corrupti?</p>
     </main>
     <script src="script.js"></script>
 </body>
