@@ -13,17 +13,17 @@ const mainPage = document.getElementById('carros')
 var newPage = ''
 
 filtroBtn.addEventListener('click', function () {
-    if (filtroImg.getAttribute("src") == "../assets/traco.png") {
+    if (filtroImg.getAttribute("src") == "assets/traco.png") {
         filtroImg.removeAttribute("src")
-        filtroImg.setAttribute("src", "../assets/seta-cima.png")
+        filtroImg.setAttribute("src", "assets/seta-cima.png")
         filtrarPreco(0)
-    } else if ((filtroImg.getAttribute("src") == "../assets/seta-cima.png")) {
+    } else if ((filtroImg.getAttribute("src") == "assets/seta-cima.png")) {
         filtroImg.removeAttribute("src")
-        filtroImg.setAttribute("src", "../assets/seta-baixo.png")
+        filtroImg.setAttribute("src", "assets/seta-baixo.png")
         filtrarPreco(1)
     } else {
         filtroImg.removeAttribute("src")
-        filtroImg.setAttribute("src", "../assets/traco.png")
+        filtroImg.setAttribute("src", "assets/traco.png")
         filtrarPreco()
     }
 })
@@ -142,9 +142,9 @@ function goToCart(id) {
                     <div class="col-span-2">
                         <p class="flex justify-end text-slate-200 text-2xl">${carro.preco.toLocaleString("en", { style: "currency", currency: "USD" })}</p>
                         <div class="grid grid-cols-2 w-full pt-10 gap-1">
-                            <img class="col-span-2" src="../assets/carros/${carro.img}-1.png">
-                            <img class="col-span-1" src="../assets/carros/${carro.img}-2.png">
-                            <img class="col-span-1" src="../assets/carros/${carro.img}-3.png">
+                            <img class="col-span-2" src="assets/carros/${carro.img}-1.png">
+                            <img class="col-span-1" src="assets/carros/${carro.img}-2.png">
+                            <img class="col-span-1" src="assets/carros/${carro.img}-3.png">
                         </div>
                         
                     </div>
@@ -204,11 +204,11 @@ function ordenarCarros(listaPreco) {
                 newCar.innerHTML = `
             <div class="flex justify-between h-fit bg-white px-2 py-1 gap-5">
                 <h2 id="${carro.nome}-golpe-nome" class="font-semibold text-xs">${carro.dlc}</h2>
-                <img class="size-7 mr-1" id="img-vaga-${carro.nome}" src="../assets/vagas-${carro.vagas}.png">
+                <img class="size-7 mr-1" id="img-vaga-${carro.nome}" src="assets/vagas-${carro.vagas}.png">
                 </div>
                 <!--fim da parte superior-->
                 <!--Imagem-->
-                <img id="img-${carro.nome}" src="../assets/carros/${carro.img}-1.png" class="w-full">
+                <img id="img-${carro.nome}" src="assets/carros/${carro.img}-1.png" class="w-full">
                 <!--Fim Imagem-->
                 <!--parte inferior-->
                 <div class="grid grid-cols-2 bg-black text-slate-200  w-full max-h-11 p-2 relative">
