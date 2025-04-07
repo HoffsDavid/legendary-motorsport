@@ -98,11 +98,11 @@ for (let chave in catalog) {
     newCar.innerHTML = `
             <div class="flex justify-between h-fit bg-white px-2 py-1 gap-5">
                 <h2 id="${carro.nome}-golpe-nome" class="font-semibold text-xs">${carro.dlc}</h2>
-                <img class="size-7 mr-1" id="img-vaga-${carro.nome}" src="../assets/vagas-${carro.vagas}.png">
+                <img class="size-7 mr-1" id="img-vaga-${carro.nome}" src="assets/vagas-${carro.vagas}.png">
                 </div>
                 <!--fim da parte superior-->
                 <!--Imagem-->
-                <img id="img-${carro.nome}" src="../assets/carros/${carro.img}-1.png" class="w-full">
+                <img id="img-${carro.nome}" src="assets/carros/${carro.img}-1.png" class="w-full">
                 <!--Fim Imagem-->
                 <!--parte inferior-->
                 <div class="grid grid-cols-2 bg-black text-slate-200  w-full max-h-11 p-2 relative">
